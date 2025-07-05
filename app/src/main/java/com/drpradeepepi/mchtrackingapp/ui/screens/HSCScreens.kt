@@ -33,7 +33,7 @@ fun HSCListScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("HSC List - $phcName") },
+                title = { Text("HSC List(${hscList.size})- $phcName") },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
                         Icon(Icons.Default.ArrowBack, contentDescription = "Back")
@@ -158,7 +158,7 @@ fun AddHSCScreen(
                     }
                 },
                 modifier = Modifier.fillMaxWidth(),
-                enabled = name.isNotBlank() && location.isNotBlank()
+                enabled = name.isNotBlank() //&& location.isNotBlank()
             ) {
                 Text("Save HSC")
             }

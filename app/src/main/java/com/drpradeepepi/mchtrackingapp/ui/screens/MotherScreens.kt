@@ -33,7 +33,7 @@ fun MothersListScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Mothers - $hscName") },
+                title = { Text("Mothers(${mothersList.size})- $hscName") },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
                         Icon(Icons.Default.ArrowBack, contentDescription = "Back")
